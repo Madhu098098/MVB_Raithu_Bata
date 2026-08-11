@@ -1,7 +1,7 @@
 @echo off
-echo Committing spelling fix...
+echo Committing WhatsApp form fix...
 git add -A
-git commit -m "Fix mixed-script Telugu encoding error for the word lakshyam"
+git commit -m "Fix mobile WhatsApp form submit redirect"
 echo.
 echo Executing Git Push to origin main...
 git push

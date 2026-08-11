@@ -121,8 +121,8 @@ export default function Home() {
 
     try {
       const formattedText = `Hi MVB Raithu Bata,\n\nI would like to inquire about your creative services:\n\n👤 Name: ${formData.name}\n📧 Email: ${formData.email}\n📞 Phone: ${formData.phone}\n💬 Message: ${formData.message}`;
-      const whatsappUrl = `https://wa.me/916300659460?text=${encodeURIComponent(formattedText)}`;
-      window.open(whatsappUrl, '_blank');
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=916300659460&text=${encodeURIComponent(formattedText)}`;
+      window.location.href = whatsappUrl;
       
       setFormStatus({ type: 'success', message: 'Opening WhatsApp to send your inquiry...' });
       setFormData({ name: '', email: '', phone: '', message: '' });
@@ -626,7 +626,7 @@ export default function Home() {
               <div className="contact-card reveal delay-100" style={{ margin: 0 }}>
                 <img src="https://img.icons8.com/ios-filled/44/d4af37/phone.png" alt="Phone Icon" className="contact-icon" />
                 <div className="contact-label">Phone Support</div>
-                <div className="contact-info-text">+91 6300659460</div>
+                <div className="contact-info-text">Want to talk</div>
                 <a href="tel:+916300659460" className="btn btn-secondary">CALL US</a>
               </div>
               {/* Email */}
