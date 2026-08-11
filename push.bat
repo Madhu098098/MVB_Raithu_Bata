@@ -1,7 +1,7 @@
 @echo off
-echo Committing mobile layout fixes...
+echo Committing spelling fix...
 git add -A
-git commit -m "Fix expertise grid columns on mobile viewports"
+git commit -m "Fix mixed-script Telugu encoding error for the word lakshyam"
 echo.
 echo Executing Git Push to origin main...
 git push

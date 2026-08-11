@@ -185,7 +185,7 @@ export default function Home() {
               </h2>
               <p className="about-title-eng">MVB Raithu Bata is focused on creating meaningful digital content for the agricultural community.</p>
               <p className="about-desc-tel telugu-text">
-                మా लक्ष्यం కేవలం కంటెంట్ తయారు చేయడం కాదు. వ్యవసాయ సమాచారాన్ని రైతుకు అర్థమయ్యే భాషలో, సరైన విజువల్స్తో మరియు ఆధునిక డిజిటల్ ఫార్మాట్లో అందించడం.
+                మా లక్ష్యం కేవలం కంటెంట్ తయారు చేయడం కాదు. వ్యవసాయ సమాచారాన్ని రైతుకు అర్థమయ్యే భాషలో, సరైన విజువల్స్తో మరియు ఆధునిక డిజిటల్ ఫార్మాట్లో అందించడం.
               </p>
               
               <div className="about-pillars">
