@@ -1,7 +1,7 @@
 @echo off
-echo Committing WhatsApp form fix...
+echo Committing direct WhatsApp routing fix...
 git add -A
-git commit -m "Fix mobile WhatsApp form submit redirect"
+git commit -m "Direct routing to native WhatsApp app or WhatsApp Web"
 echo.
 echo Executing Git Push to origin main...
 git push

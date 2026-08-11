@@ -121,8 +121,13 @@ export default function Home() {
 
     try {
       const formattedText = `Hi MVB Raithu Bata,\n\nI would like to inquire about your creative services:\n\n👤 Name: ${formData.name}\n📧 Email: ${formData.email}\n📞 Phone: ${formData.phone}\n💬 Message: ${formData.message}`;
-      const whatsappUrl = `https://api.whatsapp.com/send?phone=916300659460&text=${encodeURIComponent(formattedText)}`;
-      window.location.href = whatsappUrl;
+      
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      if (isMobile) {
+        window.location.href = `whatsapp://send?phone=916300659460&text=${encodeURIComponent(formattedText)}`;
+      } else {
+        window.open(`https://web.whatsapp.com/send?phone=916300659460&text=${encodeURIComponent(formattedText)}`, '_blank');
+      }
       
       setFormStatus({ type: 'success', message: 'Opening WhatsApp to send your inquiry...' });
       setFormData({ name: '', email: '', phone: '', message: '' });
@@ -633,7 +638,7 @@ export default function Home() {
               <div className="contact-card reveal delay-200" style={{ margin: 0 }}>
                 <img src="https://img.icons8.com/ios-filled/44/d4af37/new-post.png" alt="Email Icon" className="contact-icon" />
                 <div className="contact-label">Email Inquiry</div>
-                <div className="contact-info-text">moodveerababu38@gmail.com</div>
+                <div className="contact-info-text">For Collaborations</div>
                 <a href="mailto:moodveerababu38@gmail.com?subject=MVB%20Raithu%20Bata%20Creative%20Inquiry" className="btn btn-secondary">EMAIL US</a>
               </div>
             </div>
